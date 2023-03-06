@@ -2,9 +2,15 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  siteMetadata: {
-    title: `myproject`,
-    siteUrl: `https://www.yourdomain.tld`,
-  },
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/data`,
+      },
+    },
+    `gatsby-transformer-yaml`,
+  ],
 }
+
