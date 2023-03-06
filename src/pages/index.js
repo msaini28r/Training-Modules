@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
-import './styles.css'; // Import the stylesheet
+import "./styles.css" // Import the stylesheet
 
 export default function Home({ data }) {
   const allTrainingModules = data.allTrainingModulesYaml.nodes
@@ -15,7 +15,7 @@ export default function Home({ data }) {
     if (statusFilter && node.status !== statusFilter) {
       return false
     }
-    if (videosFilter && node.videos.indexOf("https://www.youtube.com/") !== 0) {
+    if (videosFilter && !node.videos) {
       return false
     }
     return true
@@ -29,35 +29,49 @@ export default function Home({ data }) {
       <Helmet>
         <title>Training Modules</title>
       </Helmet>
-      <h1>Training Modules</h1>
-      <div className="filters">
-        <label>
-          Status:
-          <select value={statusFilter || ""} onChange={(e) => setStatusFilter(e.target.value || null)}>
-            <option value="">All</option>
-            {statuses.map((status) => (
-              <option key={status} value={status}>{status}</option>
-            ))}
-          </select>
-        </label>
-        <label>
-          Videos:
-          <input type="checkbox" checked={videosFilter} onChange={(e) => setVideosFilter(e.target.checked)} />
-        </label>
-      </div>
-      <ul>
-        {trainingModules.map((node) => (
-          <li key={node.id}>
-            <Link to={`/${node.id}`}>
+      <div className="container">
+        <div className="filters-container">
+          <div className="filters">
+            <h2>Filter by:</h2>
+            <label>
+              Status:
+              <select
+                value={statusFilter || ""}
+                onChange={(e) => setStatusFilter(e.target.value || null)}
+              >
+                <option value="">All</option>
+                {statuses.map((status) => (
+                  <option key={status} value={status}>
+                    {status}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label>
+              Videos:
+              <input
+                type="checkbox"
+                checked={videosFilter}
+                onChange={(e) => setVideosFilter(e.target.checked)}
+              />
+            </label>
+          </div>
+        </div>
+        <div className="cards-container">
+          {trainingModules.map((node) => (
+            <div key={node.id} className="card">
               <h2>{node.name}</h2>
               <p>{node.description}</p>
-              <a href={node.repository}>Repository</a>
-              <a href={node.webpage}>Rendered Webpage</a>
-              <a href={node.videos}>Video Playlist</a>
-            </Link>
-          </li>
-        ))}
-      </ul>
+              <div className="links-container">
+                <a href={node.repository}>Repository</a>
+                <a href={node.webpage}>Rendered Webpage</a>
+                <a href={node.videos}>Video Playlist</a>
+              </div>
+              <span className={`status ${node.status}`}>{node.status}</span>
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   )
 }
