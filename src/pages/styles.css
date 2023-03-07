@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: #f9f9f9;
 }
 
 .container {
@@ -11,35 +12,58 @@ body {
 .filter-section {
   flex-basis: 30%;
   height: 100vh;
-  background-color: #f0f0f0;
-  padding: 1rem;
+  background-color: #fff;
+  padding: 2rem;
   box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.filter-section h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.5rem;
 }
 
 .filter-section label {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-size: 0.9rem;
 }
 
 .filter-section select,
 .filter-section input[type="checkbox"] {
   display: block;
   margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .card-section {
   flex-basis: 70%;
-  padding: 1rem;
+  padding: 2rem;
   box-sizing: border-box;
 }
 
 .card {
   border: 1px solid #ccc;
-  padding: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  flex-basis: calc(33.33% - 1rem);
+  padding: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-basis: calc(33.33% - 1.5rem);
   box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card:last-of-type {
@@ -48,15 +72,28 @@ body {
 
 .card h2 {
   margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.2rem;
 }
 
 .card p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #555;
+  font-size: 0.9rem;
 }
 
 .card a {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.card a:hover {
+  color: #0077cc;
 }
 
 @media (max-width: 768px) {
@@ -67,6 +104,7 @@ body {
   .filter-section {
     width: 100%;
     height: auto;
+    margin-bottom: 2rem;
   }
 
   .card-section {
