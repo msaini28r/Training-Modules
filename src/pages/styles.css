@@ -16,7 +16,7 @@ body {
   padding: 2rem;
   box-sizing: border-box;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow-y: hidden;
+  overflow: hidden;
   margin: 50px;
 }
 
