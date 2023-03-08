@@ -33,6 +33,10 @@ export default function Home({ data }) {
       <Helmet>
         <title>Training Modules</title>
       </Helmet>
+      <div className="title">
+        <div>Training Modules</div>
+        <p>You can filter the modules with the help of video and status filters.</p>
+      </div>
       <div className="container">
         <div className="filters-container">
           <div className="filters">
@@ -75,7 +79,7 @@ export default function Home({ data }) {
           {trainingModules.map((node) => (
             <div key={node.id} className="card">
               <div>
-                <img src={node.heroImage} alt={node.name} className="heroImage" style={{ width: 200, height: 200 }} />
+                <img src={node.heroImage} alt={node.name} className="heroImage"  />
               </div>
               <div className="content">
               <h2>{node.name}</h2>

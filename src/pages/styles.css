@@ -20,6 +20,32 @@ body {
   margin: 50px;
 }
 
+.title {
+  text-align: center;
+  background-color: #000;
+  padding: 70px;
+  color: #fff;
+  font-size: 100px;
+  }
+  
+  .title p {
+  font-size: 20px;
+  color: #ccc;
+  }
+  
+  .title:hover {
+  animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+  from {
+  box-shadow: 0 0 10px goldenrod;
+  }
+  to {
+  box-shadow: 0 0 20px goldenrod;
+  }
+  }
+
 .search {
   padding: 4px;
   margin-left: 5px;
@@ -88,6 +114,8 @@ body {
   margin: 0px 30px;
   top: -10px;
   position: relative;
+  width: 200px;
+  height: 200px;
 }
 
 .card:hover {
@@ -142,30 +170,45 @@ body {
   background-color: #ff9800;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .container {
     flex-direction: column;
+    max-width: 1200px;
+  }
+
+  .title{
+    width: auto;
+    font-size: 40px;
   }
 
   .filters-container {
-    width: 100%;
+    width: 80%;
     height: auto;
     margin-bottom: 2rem;
     flex-basis: 100%;
   }
 
   .card-section {
-    width: 100%;
-    flex-basis: 100%;
-    padding: 1rem;
+    width: 60%;
   }
 
   .card {
     flex-basis: calc(50% - 1rem);
     margin-right: 1rem;
+    width: 70%;
+    overflow: hidden;
+    overflow-wrap:break-word
+  }
+  .heroImage{
+    width: 140px;
+    height: 140px;
   }
 
   .card:last-of-type {
     margin-right: 0;
+  }
+
+  .status{
+    display: none;
   }
 }
