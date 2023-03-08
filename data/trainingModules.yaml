@@ -47,7 +47,7 @@
   heroImage: https://cdn-icons-png.flaticon.com/512/3145/3145765.png
   id: grid
 - description: 'The most famous data analysis framework used in HEP.'
-  name: <code>ROOT</code>
+  name: ROOT
   repository: 'https://github.com/root-project/software-carpentry'
   status: stable
   videos: ''
@@ -55,7 +55,7 @@
   heroImage: https://cdn-icons-png.flaticon.com/512/9580/9580475.png
   id: root
 - description: Reading and writing ROOT files without having to install ROOT.
-  name: <code>uproot</code>
+  name: uproot
   repository: https://github.com/hsf-training/hsf-training-uproot-webpage
   status: beta
   videos: ''
@@ -70,7 +70,7 @@
   webpage: https://hsf-training.github.io/hsf-training-cms-analysis-webpage/
   heroImage: https://cdn-icons-png.flaticon.com/512/6257/6257263.png
   id: simpleanalysis
-- description: <a href="https://en.wikipedia.org/wiki/Unit_testing">Unit testing</a>
+- description: Unit testing 
     in python.
   name: Unit testing
   repository: https://github.com/carpentries-incubator/python-testing
@@ -95,7 +95,7 @@
   webpage: ''
   heroImage: https://cdn-icons-png.flaticon.com/512/9580/9580475.png
   id: parallel
-- description: Introduction to the <a href="https://www.docker.com/">docker</a> container
+- description: Introduction to the docker container
     image system.
   name: Docker
   repository: https://github.com/hsf-training/hsf-training-docker
@@ -168,7 +168,7 @@
   webpage: ''
   heroImage: https://cdn-icons-png.flaticon.com/512/3145/3145765.png
   id: alpaka
-- description: Introduction to the <a href="https://en.wikipedia.org/wiki/Ssh_(Secure_Shell)">Secure Shell (SSH)</a>
+- description: Introduction to the Secure Shell (SSH)
   name: SSH
   repository: https://github.com/hsf-training/hsf-training-ssh-webpage/
   status: alpha
@@ -192,7 +192,7 @@
   heroImage: https://cdn-icons-png.flaticon.com/512/6257/6257263.png
   id: scikithep
   repository: https://github.com/hsf-training/hsf-training-scikit-hep-webpage
-- description: Introduction to containerization with <a href="https://apptainer.org/">Singularity/Apptainer</a>.
+- description: Introduction to containerization with Singularity/Apptainer.
   name: Singularity
   status: beta
   videos: 'https://www.youtube.com/watch?v=g0cCErlveiI&list=PLKZ9c4ONm-VkxWW98Gcn9H6WwykMiqtnF'
@@ -200,8 +200,8 @@
   heroImage: https://cdn-icons-png.flaticon.com/512/2702/2702184.png
   id: singularity
   repository: https://github.com/hsf-training/hsf-training-singularity-webpage
-- name: <code>UnROOT</code>
-  description: Open <code>ROOT</code> files in <a href="https://julialang.org/">Julia</a>!
+- name: UnROOT
+  description: Open ROOT files in Julia.
   heroImage: https://cdn-icons-png.flaticon.com/512/3145/3145765.png
   id: unroot
   status: beta
