@@ -9,6 +9,7 @@ export default function Home({ data }) {
 
   const [statusFilter, setStatusFilter] = useState(null)
   const [videosFilter, setVideosFilter] = useState(false)
+  const [searchQuery, setSearchQuery] = useState('')
 
   // Filter the training modules based on the selected filters
   const trainingModules = allTrainingModules.filter((node) => {
@@ -16,6 +17,9 @@ export default function Home({ data }) {
       return false
     }
     if (videosFilter && !node.videos) {
+      return false
+    }
+    if (searchQuery && !node.name.toLowerCase().includes(searchQuery.toLowerCase())) {
       return false
     }
     return true
@@ -32,7 +36,17 @@ export default function Home({ data }) {
       <div className="container">
         <div className="filters-container">
           <div className="filters">
+          
             <h2>Filter by:</h2>
+            <label>
+              Search:
+              <input 
+                type="text"
+                className="search" 
+                value={searchQuery} 
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
+            </label>
             <label>
               Status:
               <select
@@ -47,7 +61,7 @@ export default function Home({ data }) {
                 ))}
               </select>
             </label>
-            <label>
+            <label >
               Videos:
               <input
                 type="checkbox"
@@ -72,8 +86,7 @@ export default function Home({ data }) {
                 <a href={node.videos}>Video Playlist</a>
               </div>
               </div>
-              <span className={`status ${node.status.toLowerCase()}`}>{node.status}</span>
-              
+              <span className={`status ${node.status}`}>{node.status}</span>
             </div>
           ))}
         </div>

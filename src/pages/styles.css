@@ -16,10 +16,20 @@ body {
   padding: 2rem;
   box-sizing: border-box;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow-y: auto;
+  overflow-y: hidden;
   margin: 50px;
 }
 
+.search {
+  padding: 4px;
+  margin-left: 5px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 50%;
+  margin-bottom: 16px;
+  background-color: #fff;
+}
 
 .filters-container h2 {
   margin-top: 0;
