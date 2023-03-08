@@ -72,7 +72,7 @@ export default function Home({ data }) {
                 <a href={node.videos}>Video Playlist</a>
               </div>
               </div>
-              <span className={`status ${node.status}`}>{node.status}</span>
+              <span className={`status ${node.status.toLowerCase()}`}>{node.status}</span>
               
             </div>
           ))}
