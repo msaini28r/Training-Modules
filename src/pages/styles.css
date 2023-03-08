@@ -9,34 +9,39 @@ body {
   flex-wrap: wrap;
 }
 
-.filter-section {
-  flex-basis: 40%;
-  height: 100vh;
+.filters-container {
+  flex-basis: 20%;
+  height: 30vh;
   background-color: #fff;
   padding: 2rem;
   box-sizing: border-box;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
-  margin: auto;
+  margin: 50px;
 }
 
 
-.filter-section h2 {
+.filters-container h2 {
   margin-top: 0;
   margin-bottom: 1.5rem;
   color: #333;
   font-size: 1.5rem;
 }
 
-.filter-section label {
+.filters-container label {
   display: block;
   margin-bottom: 0.5rem;
   color: #555;
   font-size: 0.9rem;
+  top: auto;
 }
 
-.filter-section select,
-.filter-section input[type="checkbox"] {
+.cards-container{
+  margin-top: 52px;
+}
+
+.filters-container select,
+.filters-container input[type="checkbox"] {
   display: block;
   margin-bottom: 1rem;
   padding: 0.5rem;
@@ -48,20 +53,26 @@ body {
 }
 
 .card-section {
-  flex-basis: 60%;
+  flex-basis: 100%;
   padding: 2rem;
   box-sizing: border-box;
 }
 
 .card {
   border: 1px solid #ccc;
-  padding: 1.5rem;
+  float: inline-start;
+  padding: 1.8rem;
   margin-right: 1.5rem;
   margin-bottom: 1.5rem;
   flex-basis: calc(33.33% - 1.5rem);
   box-sizing: border-box;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
+}
+
+.heroImage{
+  float: left;
+  margin: 0 20px;
 }
 
 .card:hover {
@@ -103,7 +114,7 @@ body {
     flex-direction: column;
   }
 
-  .filter-section {
+  .filters-container {
     width: 100%;
     height: auto;
     margin-bottom: 2rem;

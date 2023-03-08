@@ -60,6 +60,10 @@ export default function Home({ data }) {
         <div className="cards-container">
           {trainingModules.map((node) => (
             <div key={node.id} className="card">
+              <div>
+                <img src={node.heroImage} alt={node.name} className="heroImage" style={{ width: 200, height: 200 }} />
+              </div>
+              <div className="content">
               <h2>{node.name}</h2>
               <p>{node.description}</p>
               <div className="links-container">
@@ -67,7 +71,9 @@ export default function Home({ data }) {
                 <a href={node.webpage}>Rendered Webpage</a>
                 <a href={node.videos}>Video Playlist</a>
               </div>
+              </div>
               <span className={`status ${node.status}`}>{node.status}</span>
+              
             </div>
           ))}
         </div>
@@ -87,6 +93,7 @@ export const query = graphql`
         webpage
         videos
         status
+        heroImage
       }
     }
   }

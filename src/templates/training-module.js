@@ -3,13 +3,14 @@ import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 
 export default function TrainingModule({ data }) {
-  const { name, description, repository, webpage, videos } = data.trainingModulesYaml
+  const { name, description, repository, webpage, videos, heroImage } = data.trainingModulesYaml
 
   return (
     <>
       <Helmet>
         <title>{name}</title>
       </Helmet>
+      <img src={heroImage} alt={name}  />
       <h1>{name}</h1>
       <p>{description}</p>
       <p>
@@ -35,6 +36,7 @@ export const query = graphql`
       repository
       webpage
       videos
+      heroImage
     }
   }
 `

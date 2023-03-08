@@ -4,6 +4,7 @@
   status: stable
   videos: ''
   webpage: http://swcarpentry.github.io/git-novice
+  heroImage: https://cdn-icons-png.flaticon.com/512/3145/3145765.png
   id: git
 - description: 'Learn to work with branches and more with this interactive webpage.'
   name: Advanced git
@@ -11,6 +12,7 @@
   status: stable
   videos: ''
   webpage: https://learngitbranching.js.org/?locale=en_US
+  heroImage: https://cdn-icons-png.flaticon.com/512/9580/9580475.png
   id: advancedgit
 - description: 'Get started with an incredibly popular programming language.'
   name: Programming with python
@@ -18,6 +20,7 @@
   status: stable
   videos: ''
   webpage: http://swcarpentry.github.io/python-novice-inflammation
+  heroImage: https://cdn-icons-png.flaticon.com/512/8244/8244573.png
   id: python
 - description: 'A full introduction to C++ based on a series of slides and exercises.'
   name: HEP C++ Course
@@ -25,6 +28,7 @@
   status: stable
   videos: https://github.com/hsf-training/cpluspluscourse#-video-recordings--events
   webpage: https://github.com/hsf-training/cpluspluscourse#-getting-the-latest-pdf
+  heroImage: https://cdn-icons-png.flaticon.com/512/6257/6257263.png
   id: hepcpp
 - description: 'Building code is hard. <code>CMake</code> makes it easier.'
   name: 'Build systems:  <code>cmake</code>'
@@ -32,13 +36,15 @@
   status: stable
   videos: ''
   webpage: https://hsf-training.github.io/hsf-training-cmake-webpage/
+  heroImage: https://cdn-icons-png.flaticon.com/512/2702/2702184.png
   id: cmake
-- description: ''
+- description: 'Study the basic of file systems and grid computing.'
   name: Distributed file systems and grid computing
   repository: ''
   status: alpha
   videos: ''
   webpage: ''
+  heroImage: https://cdn-icons-png.flaticon.com/512/3145/3145765.png
   id: grid
 - description: 'The most famous data analysis framework used in HEP.'
   name: <code>ROOT</code>
@@ -46,6 +52,7 @@
   status: stable
   videos: ''
   webpage: 'https://github.com/root-project/software-carpentry'
+  heroImage: https://cdn-icons-png.flaticon.com/512/9580/9580475.png
   id: root
 - description: Reading and writing ROOT files without having to install ROOT.
   name: <code>uproot</code>
@@ -53,6 +60,7 @@
   status: beta
   videos: ''
   webpage: https://hsf-training.github.io/hsf-training-uproot-webpage/
+  heroImage: https://cdn-icons-png.flaticon.com/512/8244/8244573.png
   id: uproot
 - description: A simple analysis using CMS open data.
   name: A simple analysis
@@ -60,6 +68,7 @@
   status: stable
   videos: https://www.youtube.com/watch?v=gplMywJAFDI&list=PLKZ9c4ONm-Vk0wnDKaaovoEkOk3PVdL0V
   webpage: https://hsf-training.github.io/hsf-training-cms-analysis-webpage/
+  heroImage: https://cdn-icons-png.flaticon.com/512/6257/6257263.png
   id: simpleanalysis
 - description: <a href="https://en.wikipedia.org/wiki/Unit_testing">Unit testing</a>
     in python.
@@ -68,6 +77,7 @@
   status: beta
   videos: ''
   webpage: http://carpentries-incubator.github.io/python-testing/
+  heroImage: https://cdn-icons-png.flaticon.com/512/2702/2702184.png
   id: testingpython
 - description: 'Make science prettier with beautiful plots!'
   name: Matplotlib for HEP
@@ -75,13 +85,15 @@
   status: beta
   videos: ''
   webpage: https://hsf-training.github.io/hsf-training-matplotlib/
+  heroImage: https://cdn-icons-png.flaticon.com/512/3145/3145765.png
   id: matplotlib
-- description: ''
+- description: 'basic parallel programming'
   name: Parallel programming
   repository: ''
   status: alpha
   videos: ''
   webpage: ''
+  heroImage: https://cdn-icons-png.flaticon.com/512/9580/9580475.png
   id: parallel
 - description: Introduction to the <a href="https://www.docker.com/">docker</a> container
     image system.
@@ -90,6 +102,7 @@
   status: stable
   videos: https://www.youtube.com/watch?v=Qr42pEtio-Q&list=PLKZ9c4ONm-VnqD5oN2_8tXO0Yb1H_s0sj
   webpage: https://hsf-training.github.io/hsf-training-docker/index.html
+  heroImage: https://cdn-icons-png.flaticon.com/512/8244/8244573.png
   id: docker
 - description: E.g. <code>yadage</code> and <code>reana</code>
   name: Workflows &amp; reproducibility
@@ -97,6 +110,7 @@
   status: alpha
   videos: ''
   webpage: ''
+  heroImage: https://cdn-icons-png.flaticon.com/512/6257/6257263.png
   id: yadagereana
 - description: 'Get behind the buzzword and teach machines to work for you intelligently!'
   name: Machine learning
@@ -104,6 +118,7 @@
   status: stable
   videos: https://www.youtube.com/playlist?list=PLKZ9c4ONm-VmHsMKImIDEMsZI1Vp0UY-Z
   webpage: https://hsf-training.github.io/hsf-training-ml-webpage
+  heroImage: https://cdn-icons-png.flaticon.com/512/2702/2702184.png
   id: ml
 - description: 'Speed up your machine learning using massive parallelization!'
   name: Machine learning on GPU
@@ -111,44 +126,47 @@
   status: stable
   videos: https://www.youtube.com/playlist?list=PLKZ9c4ONm-VnfKk7XrVUa-V42lUdMrB6M
   webpage: https://hsf-training.github.io/hsf-training-ml-gpu-webpage
+  heroImage: https://cdn-icons-png.flaticon.com/512/3145/3145765.png
   id: gpuml
-- description: <a href="https://docs.gitlab.com/ee/ci/">Continuous integration and
-    deployment</a> with <a href="https://about.gitlab.com/">gitlab</a>.
+- description: Continuous integration and deployment github actions
   name: CI/CD (gitlab)
   repository: https://github.com/hsf-training/hsf-training-cicd
   status: stable
   videos: https://www.youtube.com/watch?v=C9auGFgIHns&list=PLKZ9c4ONm-VmmTObyNWpz4hB3Hgx8ZWSb
   webpage: https://hsf-training.github.io/hsf-training-cicd/
+  heroImage: https://cdn-icons-png.flaticon.com/512/9580/9580475.png
   id: cicd
-- description: <a href="https://docs.gitlab.com/ee/ci/">Continuous integration and
-    deployment</a> with <a href="https://github.com/features/actions">github actions</a>.
+- description: Continuous integration and deployment github actions
   name: CI/CD (github)
   repository: https://github.com/hsf-training/hsf-training-cicd-github
   status: stable
   videos: https://www.youtube.com/watch?v=-Xd5D6xKugk&list=PLKZ9c4ONm-Vl3kwsjrNRlPYNQFbPO2no4
   webpage: https://hsf-training.github.io/hsf-training-cicd-github/
+  heroImage: https://cdn-icons-png.flaticon.com/512/8244/8244573.png
   id: cicdgithub
-- description: <code>sphinx</code>, <code>doxygen</code>, etc.
+- description: sphinx, doxygen, etc.
   name: Documentation
   repository: ''
   status: alpha
   videos: ''
   webpage: ''
+  heroImage: https://cdn-icons-png.flaticon.com/512/6257/6257263.png
   id: doc
-- description: <code>pythia</code>, <code>sherpa</code>, <code>madgraph</code>, etc.
+- description: pythia, sherpa, madgraph, etc.
   name: Event generation and MC
   repository: ''
   status: alpha
   videos: ''
   webpage: ''
+  heroImage: https://cdn-icons-png.flaticon.com/512/2702/2702184.png  
   id: generators
-- description: <a href="https://alpaka.readthedocs.io/en/latest/index.html">alpaka</a>
-    is a header-only C++ abstraction library for accelerator development.
+- description: alpaka is a header-only C++ abstraction library for accelerator development.
   name: alpaka
   repository: https://github.com/hsf-training/hsf-training-alpaka-webpage
   status: alpha
   videos: ''
   webpage: ''
+  heroImage: https://cdn-icons-png.flaticon.com/512/3145/3145765.png
   id: alpaka
 - description: Introduction to the <a href="https://en.wikipedia.org/wiki/Ssh_(Secure_Shell)">Secure Shell (SSH)</a>
   name: SSH
@@ -156,6 +174,7 @@
   status: alpha
   videos: ''
   webpage: https://hsf-training.github.io/hsf-training-ssh-webpage/
+  heroImage: https://cdn-icons-png.flaticon.com/512/9580/9580475.png
   id: ssh
 - description: A guide through the basics of the file systems and the shell.
   name: The UNIX Shell
@@ -163,12 +182,14 @@
   status: stable
   videos: ''
   webpage: https://swcarpentry.github.io/shell-novice/
+  heroImage: https://cdn-icons-png.flaticon.com/512/8244/8244573.png
   id: unix
 - description: A collection of packages for particle physics analyses in Python.
   name: Scikit-HEP
   status: stable
   videos: ''
   webpage: https://hsf-training.github.io/hsf-training-scikit-hep-webpage/
+  heroImage: https://cdn-icons-png.flaticon.com/512/6257/6257263.png
   id: scikithep
   repository: https://github.com/hsf-training/hsf-training-scikit-hep-webpage
 - description: Introduction to containerization with <a href="https://apptainer.org/">Singularity/Apptainer</a>.
@@ -176,19 +197,22 @@
   status: beta
   videos: 'https://www.youtube.com/watch?v=g0cCErlveiI&list=PLKZ9c4ONm-VkxWW98Gcn9H6WwykMiqtnF'
   webpage: https://hsf-training.github.io/hsf-training-singularity-webpage/
+  heroImage: https://cdn-icons-png.flaticon.com/512/2702/2702184.png
   id: singularity
   repository: https://github.com/hsf-training/hsf-training-singularity-webpage
 - name: <code>UnROOT</code>
   description: Open <code>ROOT</code> files in <a href="https://julialang.org/">Julia</a>!
+  heroImage: https://cdn-icons-png.flaticon.com/512/3145/3145765.png
   id: unroot
   status: beta
   videos: ""
   webpage: "https://moelf.github.io/HSF_Julia_Tutorial/dev/notebooks/unroot_tutorial/"
   repository: "https://github.com/Moelf/HSF_Julia_Tutorial"
 - description: Advanced bits of python (testing, debugging, logging, and more)
-  id: levelupyourpython
   name: Level up your python
+  id: levelupyourpython
   status: stable
   videos: ''
+  heroImage: https://cdn-icons-png.flaticon.com/512/9580/9580475.png
   webpage: https://henryiii.github.io/level-up-your-python/notebooks/0%20Intro.html
   repository: https://github.com/henryiii/level-up-your-python
