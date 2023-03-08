@@ -94,10 +94,6 @@ body {
   transform: translateY(-5px);
 }
 
-.card:last-of-type {
-  margin-right: 0;
-}
-
 .card h2 {
   margin-top: 0;
   margin-bottom: 1rem;
