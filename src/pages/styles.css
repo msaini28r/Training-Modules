@@ -198,6 +198,7 @@ body {
     width: 130px;
     height: 130px;
     margin-bottom: 20px;
-    padding-left: 5px;
+    padding-left: 10px;
+    margin-right: 10px;
   }
 }
