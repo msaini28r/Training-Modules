@@ -11,7 +11,7 @@ body {
 
 .filters-container {
   flex-basis: 20%;
-  height: 30vh;
+  height: 40vh;
   background-color: #fff;
   padding: 2rem;
   box-sizing: border-box;
@@ -170,45 +170,34 @@ body {
   background-color: #ff9800;
 }
 
-@media (max-width: 600px) {
-  .container {
-    flex-direction: column;
-    max-width: 1200px;
-  }
+@media screen and (min-width: 320px) and (max-width: 768px){
 
   .title{
-    width: auto;
-    font-size: 40px;
+    font-size: 50px;
+    overflow: auto;
   }
 
-  .filters-container {
+  .card{
     width: 80%;
-    height: auto;
-    margin-bottom: 2rem;
-    flex-basis: 100%;
+    white-space: initial;
+    text-align: center;
   }
 
-  .card-section {
-    width: 60%;
+  .cards-container {
+    margin-left: 70px;
   }
 
-  .card {
-    flex-basis: calc(50% - 1rem);
-    margin-right: 1rem;
-    width: 70%;
-    overflow: hidden;
-    overflow-wrap:break-word
+  .filters-container{
+    flex-basis: auto;
+    height: 30vh;
   }
-  .heroImage{
-    width: 140px;
-    height: 140px;
-  }
-
-  .card:last-of-type {
-    margin-right: 0;
-  }
-
   .status{
     display: none;
+  }
+  .heroImage{
+    width: 130px;
+    height: 130px;
+    margin-bottom: 20px;
+    padding-left: 5px;
   }
 }
